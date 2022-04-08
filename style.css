@@ -424,3 +424,29 @@ footer{
 .guide-description{
     color: #EDF0F1;
 }
+
+.image-main-piece{
+    width:100%;
+}
+
+.image-hover-piece{
+    width:100%;
+}
+
+.figure {
+    position: relative;
+    width: 100%;
+}
+.figure img.image-hover-piece {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.figure:hover img.image-hover-piece {
+    opacity: 1;
+}
