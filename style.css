@@ -9,6 +9,8 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,18 +26,20 @@ body::after {
 }
 
 li, a{
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #EDF0F1;
     text-decoration: none;
 }
 
+/* ============ header ============*/
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #34363d;
 }
 
 .title {
@@ -45,38 +49,31 @@ header {
 
 .title a {
     font-size: 32px;
+    background-color: #34363d;
 }
 
 .nav_links {
     list-style: none;
+    background-color: #34363d;
 }
 
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
+    background-color: #34363d;
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    background-color: #34363d;
 }
 
 .nav_links li a:hover {
     color: #0088A9;
 }
-/*
-button{
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
 
-button:hover{
-    background-color: rgba(0,136,169,0.8);
-}
-*/
+/* ============ footer ============*/
+
 footer{
     position: absolute;
     bottom: 0;
@@ -89,7 +86,6 @@ footer{
     width: 100vw;
     padding: 20px 0;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
@@ -115,4 +111,133 @@ footer{
     line-height: 39px;
     font-size: 25px;
     background: transparent;
+}
+
+/* ============ hero ============*/
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(36, 37, 42, 0.8), rgba(0, 0, 0, 0.23)), url("./assets/images/chess_background.jpeg");
+    background-size: 100% 100%;
+    color: #EDF0F1;
+}
+
+.hero_container{
+    background-color: transparent;
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    alignment: center;
+    justify-content: center;
+    position: relative;
+    text-align: right;
+}
+
+.hero_info{
+    position: absolute;
+    top: 15%;
+}
+
+.hero_container .hero_info h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero_container .hero_info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero_container .hero_info p {
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin: 0 0 0 auto;
+}
+
+.hero_container .hero_info a {
+    text-decoration: none;
+    display: inline-block;
+    color: #1a1a1f;
+    background-color: #EDF0F1;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.8em 1.2em;
+    margin-top: 2rem;
+}
+
+.hero_info, .hero_info h1, .hero_info h2, .hero_info p{
+    background-color: transparent;
+}
+
+/* ============ About us ============*/
+/*
+.about-us{
+    width: 100%;
+    height: 90vh;
+}
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#our-team{
+    text-align:center;
+    color: #EDF0F1;
+    margin: 20px;
+}
+
+.team-column {
+    float: left;
+    width: 20.0%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.team-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.team-container {
+    padding: 0 16px;
+    background-color: #474e5d;
+}
+.team-container p, .team-container h2{
+    background-color: #474e5d;
+}
+
+.team-container::after, .team-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.team-title {
+    color: grey;
+}
+
+.about-section p, .about-section h1{
+    background-color: #474e5d;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
