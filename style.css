@@ -219,9 +219,16 @@ footer{
 
 .champions-column {
     float: left;
-    width: 33.3%;
+    width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
+}
+
+.champions-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .champions-card {
@@ -362,4 +369,58 @@ footer{
 
 .timeline-content h2, .timeline-content p{
     background-color: white;
+}
+
+/* ============ How to play ============*/
+
+.guide-page-title{
+    color: #EDF0F1;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.guide-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Three columns side by side */
+.guide-column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Add some shadows to create a card effect */
+.guide-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.guide-card h2{
+    color: #0088A9;
+}
+
+/* Some left and right padding inside the container */
+.guide-container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.guide-container::after, .guide-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.guide-title {
+    color: grey;
+}
+
+.guide-description{
+    color: #EDF0F1;
 }
