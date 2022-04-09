@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* ============ Overwriting les attributs général ============*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,7 +33,7 @@ li, a{
     text-decoration: none;
 }
 
-/* ============ header ============*/
+/* ============ Les attributs du header ============*/
 
 header {
     display: flex;
@@ -72,7 +73,7 @@ header {
     color: #0088A9;
 }
 
-/* ============ footer ============*/
+/* ============ Les attributs du footer ============*/
 
 footer{
     position: absolute;
@@ -113,7 +114,7 @@ footer{
     background: transparent;
 }
 
-/* ============ hero ============*/
+/* ============ Les attributs du hero dans "index" page ============*/
 
 .hero {
     width: 100%;
@@ -172,7 +173,7 @@ footer{
     background-color: transparent;
 }
 
-/* ============ About us ============*/
+/* ============ Les attributs du "about" page ============*/
 
 .about-container{
     max-width: 1100px;
@@ -211,7 +212,7 @@ footer{
     height: 250px;
 }
 
-/* ============ Champions ============*/
+/* ============ Les attributs du classement dans "champions" page ============*/
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -273,16 +274,15 @@ footer{
     text-align: center;
 }
 
-/* ============ Timeline ============*/
+/* ============ Les attributs du timeline dans "champions" page ============*/
 
-/* The actual timeline (the vertical ruler) */
+/* Le timeline (la règle verticale) */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -294,7 +294,7 @@ footer{
     margin-left: -3px;
 }
 
-/* Container around content */
+/* Conteneur autour du contenu */
 .timeline-container {
     padding: 10px 40px;
     position: relative;
@@ -302,7 +302,7 @@ footer{
     width: 50%;
 }
 
-/* The circles on the timeline */
+/* Les cercles sur le timeline */
 .timeline-container::after {
     content: '';
     position: absolute;
@@ -316,17 +316,15 @@ footer{
     z-index: 1;
 }
 
-/* Place the container to the left */
 .left {
     left: 0;
 }
 
-/* Place the container to the right */
 .right {
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Ajouter des flèches au conteneur de gauche (pointant vers la droite) */
 .left::before {
     content: " ";
     height: 0;
@@ -340,7 +338,7 @@ footer{
     border-color: transparent transparent transparent white;
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Ajouter des flèches au conteneur de droite (pointant vers la gauche) */
 .right::before {
     content: " ";
     height: 0;
@@ -354,12 +352,12 @@ footer{
     border-color: transparent white transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Fixez le cercle pour les conteneurs sur le côté droit */
 .right::after {
     left: -16px;
 }
 
-/* The actual content */
+/* le contenu */
 .timeline-content {
     padding: 20px 30px;
     background-color: white;
@@ -371,7 +369,7 @@ footer{
     background-color: white;
 }
 
-/* ============ How to play ============*/
+/* ============ Les attributs du "How to play" page ============*/
 
 .guide-page-title{
     color: #EDF0F1;
@@ -388,7 +386,7 @@ footer{
     margin-bottom: 2rem;
 }
 
-/* Three columns side by side */
+/* Trois colonnes côte à côte */
 .guide-column {
     float: left;
     width: 25%;
@@ -396,7 +394,7 @@ footer{
     padding: 0 8px;
 }
 
-/* Add some shadows to create a card effect */
+/* Ajoutez des ombres pour créer un effet de carte */
 .guide-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -405,12 +403,12 @@ footer{
     color: #0088A9;
 }
 
-/* Some left and right padding inside the container */
+/* Certains padding gauche et droit à l'intérieur du conteneur */
 .guide-container {
     padding: 0 16px;
 }
 
-/* Clear floats */
+/* Flotteurs clairs */
 .guide-container::after, .guide-row::after {
     content: "";
     clear: both;
@@ -450,3 +448,6 @@ footer{
 .figure:hover img.image-hover-piece {
     opacity: 1;
 }
+
+
+
